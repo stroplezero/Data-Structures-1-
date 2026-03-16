@@ -18,8 +18,8 @@ int main() {
         printf("결과: ");
         for (int i = 0; i < 32; i++) {
             printf("%d", bits[i]);
-            if (i == 0) printf("//");
-            if (i == 8) printf("//");
+            if (i == 0) printf("/");
+            if (i == 8) printf("/");
         }
         printf("\n");
         return 0;
