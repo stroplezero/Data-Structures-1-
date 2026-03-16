@@ -19,7 +19,8 @@ int main() {
         for (int i = 0; i < 32; i++) {
             printf("%d", bits[i]);
             if (i == 0) printf("/");
-            if (i == 8) printf("/");
+            else if (i == 8) printf("/");
+            else if (i > 2 && i % 4 == 0) printf(" ");
         }
         printf("\n");
         return 0;
