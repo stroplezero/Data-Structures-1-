@@ -20,7 +20,8 @@ int main() {
             printf("%d", bits[i]);
             if (i == 0) printf("/");
             else if (i == 8) printf("/");
-            else if (i > 2 && i % 4 == 0) printf(" ");
+            else if (i == 4) printf(" ");
+            else if (i > 8 && (i - 8) % 4 == 0 && i < 31) printf(" ");
         }
         printf("\n");
         return 0;
