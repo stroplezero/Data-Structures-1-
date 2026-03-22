@@ -16,7 +16,7 @@ int main() {
 	change_from_f(f1, &num1, &den1);
 	change_from_f(f2, &num2, &den2);
 	
-	int temp[3] = {0, 1};
+	int temp[2] = {0, 1};
 	char out[20] = { 0 };
 
 	switch (sign) {
