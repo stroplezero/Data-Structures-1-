@@ -5,7 +5,7 @@
 
 #include "my_fraction.h"
 
-my_fraction change_from_f(const char *str, int *num, int *den) {
+void change_from_f(const char *str, int *num, int *den) {
 	if (sscanf(str, "%d/%d", num, den) == 1) {
 		*den = 1;
 	}
