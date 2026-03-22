@@ -1,7 +1,7 @@
 typedef unsigned int my_fraction;
 
 //1개의 문자열 str를 A/B 꼴로 받아서 2개의 정수 num, den에 저장함 
-extern my_fraction change_from_f(const char *str, int *num, int *den);
+extern void change_from_f(const char *str, int *num, int *den);
 
 //2개의 정수를 분수 자료형에서 A/B 꼴로 변환하여 1개의 문자열 str에 저장함 
 extern void change_from_ab(const int* temp, char* out);
