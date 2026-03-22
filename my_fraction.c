@@ -23,7 +23,7 @@ void add(int num1, int den1, int num2, int den2, int *temp1, int *temp2) {
 	*temp2 = den1 * den2;
 }
 void minus(int num1, int den1, int num2, int den2, int *temp1, int *temp2) {
-	*temp1 = num1 * den2 - num2;
+	*temp1 = (num1 * den2) - (num2 * den1);
 	*temp2 = den1 * den2;
 }
 void mult(int num1, int den1, int num2, int den2, int *temp1, int *temp2) {
