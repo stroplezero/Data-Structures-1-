@@ -1,9 +1,9 @@
 # GCD와 피보나치 수열의 시간 복잡도 분석 보고서
 
 ## 1. 피보나치 수열 코드 구현
-- main.c:
-- my_math.c:
-- my_math.h:
+- main.c: [https://github.com/stroplezero/Data-Structures-1-/blob/main/project-4-2/main.c]
+- my_math.c: [https://github.com/stroplezero/Data-Structures-1-/blob/main/project-4-2/my_math.c]
+- my_math.h: [https://github.com/stroplezero/Data-Structures-1-/blob/main/project-4-2/my_math.h]
 
 ## 2. 피보나치 수열의 시간 복잡도 분석
 - 사용 알고리즘: 재귀적 방법(피보나치 수열) 
@@ -12,4 +12,8 @@
 
 따라서 피보나치 수열의 시간 복잡도는 O(2^n)의 시간 복잡도를 가진다고 할 수 있다.  
 
-## 2. 
+## 2. 프로파일링 분석
+ GCD와 피보나치 수열의 시간 복잡도를 분석하기 위해 코드의 반복 횟수를 30번부터 2번씩 늘려 프로파일링을 각 횟수마다 3번씩 돌려 평균 시간을 계산하였다. 
+
+ - 30번 결과
+ - ["C:\Users\a0103\Desktop\Programing\Data-Structures-1-\Project4_1\30번 결과.diagsession"]
