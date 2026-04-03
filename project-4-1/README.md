@@ -3,7 +3,7 @@
 ## 1. 코드 링크
 - main.c: [https://github.com/stroplezero/Data-Structures-1-/blob/main/project-3-2/main.c]
 - my_math.c: [https://github.com/stroplezero/Data-Structures-1-/blob/main/project-3-2/my_math.c]
-- my_math.h: []
+- my_math.h: [https://github.com/stroplezero/Data-Structures-1-/blob/main/project-3-2/my_math.h]
 
 ## 2. 시간 복잡도 분석
 - 사용 알고리즘: 유클리드 호제법
