@@ -1,7 +1,9 @@
 # GCD 알고리즘 복잡도 분석 보고서
 
 ## 1. 코드 링크
-- [GitHub 레포지토리 링크 삽입]
+- main.c: [https://github.com/stroplezero/Data-Structures-1-/blob/main/project-3-2/main.c]
+- my_math.c: []
+- my_math.h: []
 
 ## 2. 시간 복잡도 분석
 - 사용 알고리즘: 유클리드 호제법
