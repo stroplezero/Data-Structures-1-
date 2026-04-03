@@ -1,6 +1,6 @@
 # 피보나치의 시간 복잡도 분석 보고서
 
-## 1. 피보나치 코드 구현
+## 1. 피보나치 코드 링크
 - main.c: [https://github.com/stroplezero/Data-Structures-1-/blob/main/project-4-2/main.c]
 - my_math.c: [https://github.com/stroplezero/Data-Structures-1-/blob/main/project-4-2/my_math.c]
 - my_math.h: [https://github.com/stroplezero/Data-Structures-1-/blob/main/project-4-2/my_math.h]
