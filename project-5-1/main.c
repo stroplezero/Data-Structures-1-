@@ -29,21 +29,17 @@ int main() {
 	printf("total: %d\n", total);
 
 	int max = iArray[0];
+	int min = iArray[0];
 
-	for (int i = 0; i < SIZE; i++) {
+	for (int i = 1; i < SIZE; i++) {
 		if (max < iArray[i]) {
 			max = iArray[i];
 		}
-	}
-	printf("max: %d\n", max);
-
-	int min = iArray[0];
-	
-	for (int i = 0; i < SIZE; i++) {
 		if (min > iArray[i]) {
 			min = iArray[i];
 		}
 	}
+	printf("max: %d\n", max);
 	printf("min: %d\n", min);
 
 	return 0;
