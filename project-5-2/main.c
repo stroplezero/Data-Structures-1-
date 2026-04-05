@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define SIZE 3
+#define SIZE 7
 
 int main() {
 	int iArray[SIZE][SIZE] = {0};
@@ -34,7 +34,7 @@ int main() {
 	}
 	for (int i = 0; i < SIZE; i++){
 		for (int j = 0; j < SIZE; j++) {
-			printf("%d ", iArray[i][j]);
+			printf("%d\t", iArray[i][j]);
 		}
 		printf("\n");
 	}
