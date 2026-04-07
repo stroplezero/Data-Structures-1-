@@ -38,9 +38,10 @@ int main() {
 	}
 	printf("total: %d\n", total);
 
-	ptr = iPtr;
+
 	int max = *iPtr;
 	int min = *iPtr;
+    ptr = iPtr;
 
 	for (int i = 1; i < SIZE; i++) {
 		if (max < *(ptr + i)) {
