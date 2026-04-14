@@ -5,6 +5,7 @@
 ## 2. 코드 구현
 ### 2-1. 재귀적 방법
 시간 복잡도: O(2^n)
+링크: [https://github.com/stroplezero/Data-Structures-1-/blob/main/project-8-1/main.c]
 
 ### 2-2. 순환적 방법
 시간 복잡도: O(n)
