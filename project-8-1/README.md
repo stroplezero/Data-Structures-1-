@@ -8,5 +8,6 @@
 
 ### 2-2. 순환적 방법
 시간 복잡도: O(n)
+링크: [https://github.com/stroplezero/Data-Structures-1-/blob/main/project-8-2/main.c]
 
 ## 3. 수행 시간 프로파일링 결과
