@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// SIZE를 사용해서 N를 정함.
+// SIZE를 사용해서 최대 N를 정함.
 #define N 1000
 
 long long fibo(int n) {
