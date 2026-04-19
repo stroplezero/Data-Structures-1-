@@ -48,7 +48,7 @@ int insertArrayList(arrayList* al, int pos, elementArrayList item) {
 	}
 
 	if (isFullArrayList(al) == 1) {
-		int* temp = (int*)realloc(al->data, (al->capacity * 2) * sizeof(int));
+		int* temp = (int*)realloc(al->data, (al->capacity * 2) * sizeof(elementArrayList));
 		printf("확장 성공!");
 
 		if (temp == NULL) {
