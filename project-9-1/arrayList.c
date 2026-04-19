@@ -61,7 +61,7 @@ int insertArrayList(arrayList* al, int pos, elementArrayList item) {
 		printf("현재 용량: %d\n", al->capacity);
 	}
 
-	for (int i = al->size; i >= pos; i--) {
+	for (int i = al->size - 1; i >= pos; i--) {
 		al->data[i + 1] = al->data[i];
 	}
 
