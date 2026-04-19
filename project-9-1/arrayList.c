@@ -92,6 +92,8 @@ int initArrayList(arrayList* al) {
 	for (int i = al->size - 1; i >= 0; i--) {
 		deleteArrayList(al, i);
 	}
+
+	return 1;
 }
 
 elementArrayList getItemArrayList(arrayList* al, int pos) {
