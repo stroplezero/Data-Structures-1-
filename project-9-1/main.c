@@ -11,7 +11,7 @@ int main() {
 		printf("Create ok\n");
 	}
 
-	printf("할당된 크기: %zu 바이트\n", myArrayList->capacity);
+	printf("할당된 크기: %d 바이트\n", myArrayList->capacity);
 
 	// Insert test
 	insertArrayList(myArrayList, 0, 10); 
