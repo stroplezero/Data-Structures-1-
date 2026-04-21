@@ -26,6 +26,8 @@ int printSparseMatrix(sparseMatrix* sm) {
 	printf("희소 행렬: \n");
 
 	printArrayList(sm->value);
+
+	return 1;
 }
 
 sparseMatrix* addSparseMatrix(sparseMatrix* sm1, sparseMatrix* sm2) {
@@ -38,21 +40,19 @@ sparseMatrix* addSparseMatrix(sparseMatrix* sm1, sparseMatrix* sm2) {
 		for (j = 0; j <= sizeArrayList(sm2->value); j++) {
 			elementArrayList nonZeroOfSM2 = getItemArrayList(sm2, j);
 
-			if (nonZeroOfSM1.col == nonZeroOfSM2.col &&
-				nonZeroOfSM1.row == nonZeroOfSM2.row) {
+			if (nonZeroOfSM1.col == nonZeroOfSM2.col && nonZeroOfSM1.row == nonZeroOfSM2.row) {
 				insertArrayList(smResult, sizeArrayList(smResult), (elementArrayList) {
 					nonZeroOfSM1.row,
-						nonZeroOfSM1.col,
-						nonZeroOfSM1.value + nonZeroOfSM2.value
+					nonZeroOfSM1.col,
+					nonZeroOfSM1.value + nonZeroOfSM2.value
 				});
 
 				break;
 			}
 		}
 
-		if (j == sizeArrayList(sm2)) {
-			insertArrayList(smResult, sizeArrayList(smResult),
-				nonZeroOfSM1);
+		if (j == sizeArrayList(sm2->value)) {
+			insertArrayList(smResult, sizeArrayList(smResult),nonZeroOfSM1);
 		}
 	}
 
