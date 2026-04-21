@@ -22,3 +22,4 @@ extern int initArrayList(arrayList* al);
 extern elementArrayList getItemArrayList(arrayList* al, int pos);
 extern int replaceItemArrayList(arrayList* al, int pos, elementArrayList item);
 extern void printArrayList(arrayList* al);
+extern void clearArrayList(arrayList* al);
