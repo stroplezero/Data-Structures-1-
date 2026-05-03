@@ -41,13 +41,26 @@ int sizeArrayList(arrayList* al) {
 	return al->size;
 }
 
-int insertArrayList(arrayList* al,
-	int pos, elementArrayList item) {
+int insertArrayList(arrayList* al, int pos, elementArrayList item) {
 	if (pos < 0 || pos > al->size) {
+
 		return 0;
 	}
 
-	for (int i = al->size; i >= pos; i--) {
+	if (isFullArrayList(al) == 1) {
+		elementArrayList* temp = (elementArrayList*)realloc(al->data, (al->capacity * 2) * sizeof(elementArrayList));
+		printf("확장 성공!");
+
+		if (temp == NULL) {
+			printf("확장 실패");
+			return 1;
+		}
+
+		al->data = temp;
+		al->capacity = al->capacity * 2;
+	}
+
+	for (int i = al->size - 1; i >= pos; i--) {
 		al->data[i + 1] = al->data[i];
 	}
 
@@ -56,6 +69,7 @@ int insertArrayList(arrayList* al,
 
 	return 1;
 }
+
 
 elementArrayList deleteArrayList(arrayList* al, int pos) {
 	if (pos < 0 || pos > al->size - 1) {
@@ -77,6 +91,8 @@ int initArrayList(arrayList* al) {
 	for (int i = al->size - 1; i >= 0; i--) {
 		deleteArrayList(al, i);
 	}
+
+	return 1;
 }
 
 elementArrayList getItemArrayList(
