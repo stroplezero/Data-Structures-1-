@@ -98,36 +98,16 @@ polynomial* inputPolynomial(polynomial* po) {
 }
 
 polynomial* multiPolynomial(polynomial* p1, polynomial* p2) {
-	polynomial* r = createPolynomial(100);
+	polynomial* r = createPolynomial(p1->size * p2->size);
 
-	int i = 0, j = 0;
-
-	while (i < sizeArrayList(p1) && j < sizeArrayList(p2)) {
-		if (p1->data[i].expo < p2->data[j].expo) {
-			addItemPolynomial(r, p2->data[j]);
-			j++;
-		}
-		else if (p1->data[i].expo > p2->data[j].expo) {
-			addItemPolynomial(r, p1->data[i]);
-			i++;
-		}
-		else {
-			addItemPolynomial(r, (elementType) {p1->data[i].coef * p2->data[j].coef, p1->data[i].expo});
-
-			i++;
-			j++;
+	for (int i = 0; i < sizeArrayList(p1); i++) {
+		for (int j = 0; j < sizeArrayList(p2); j++) {
+			elementType item = {
+				p1->data[i].coef * p2->data[j].coef,
+				p1->data[i].expo + p2->data[j].expo  
+			};
+			addItemPolynomial(r, item);
 		}
 	}
-
-	while (i < p1->size) {
-		addItemPolynomial(r, p1->data[i]);
-		i++;
-	}
-
-	while (j < p2->size) {
-		addItemPolynomial(r, p2->data[j]);
-		j++;
-	}
-
 	return r;
 }
