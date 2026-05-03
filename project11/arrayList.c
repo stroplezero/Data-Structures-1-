@@ -119,3 +119,7 @@ void printArrayList(arrayList* al) {
 			al->data[i].expo);
 	}
 }
+
+void clearArrayList(arrayList* al) {
+	al->size = 0;
+}
