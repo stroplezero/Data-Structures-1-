@@ -55,7 +55,7 @@ int printLinkedList(LinkedList* li) {
 	}
 }
 
-LinkedList* insertLastLinkedLikst(LinkedList* li, PointType item) {
+LinkedList* insertLastLinkedList(LinkedList* li, PointType item) {
 	PointType* ptr = li->head;
 
 	while (ptr->next != NULL) {
