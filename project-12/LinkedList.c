@@ -5,7 +5,7 @@
 
 LinkedList* createLinkedList() {
 	LinkedList* r;
-	r = (LinkedList*)malloc(sizeof(LinkedList)); //malloc으로 가져온 메모리는 시스템에 남아있어서 이후에도 지속적으로 사용 가능
+	r = (LinkedList*)malloc(sizeof(LinkedList));
 
 	r->head = (PointType*)NULL;
 	r->size = 0;
