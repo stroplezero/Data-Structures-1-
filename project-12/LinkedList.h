@@ -20,6 +20,3 @@ extern LinkedList* insertFirstLinkedList(LinkedList* li, PointType item);
 extern int printLinkedList(LinkedList* li);
 extern LinkedList* insertLastLinkedList(LinkedList* li, PointType item);
 extern LinkedList* deleteAtLinkedList(LinkedList* li, int at);
-extern LinkedList* insertItemLinkedList(LinkedList* li, PointType* pre, PointType item);
-extern PointType deleteFirstLinkedList(LinkedList* li);
-extern PointType deleteLastLinkedList(LinkedList* li);
