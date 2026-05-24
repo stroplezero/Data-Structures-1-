@@ -51,7 +51,7 @@ stackElement* popLinkedStack(LinkedStack* s) {
 		s->head = nPtr->next;
 
 		stackElement* temp = (stackElement*)malloc(sizeof(stackElement));
-		strcpy(temp, nPtr->data);
+		strcpy(*temp, nPtr->data);
 		free(nPtr);
 
 		s->size--;
