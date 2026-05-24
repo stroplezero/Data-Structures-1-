@@ -27,8 +27,8 @@ int main() {
 
 		stackElement* temp;
 
-		if (menuNum < 0 || menuNum > 3) {
-			printf("0~3의 정수를 입력해주세요.\n");
+		if (menuNum < 1 || menuNum > 3) {
+			printf("1~3의 정수를 입력해주세요.\n");
 		}
 		else {
 			switch (menuNum) {
@@ -51,6 +51,7 @@ int main() {
 
 				if (peekLinkedStack(mylinkedStack) == NULL) {
 					printf("브라우저가 종료되었습니다.");
+					destroyLinkedStack(mylinkedStack);
 					check = 0;
 				}
 				else {
